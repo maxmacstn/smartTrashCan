@@ -23,7 +23,7 @@ class Classifier(object):
         self.interpreter = None
         self.input_details = None
         self.output_details = None
-        self.Classes = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+        self.Classes = ['glass', 'metal', 'paper', 'plastic', 'trash']
 
         self.detection_rate = 5
         self.prev = 0

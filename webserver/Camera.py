@@ -12,6 +12,8 @@ class Camera(object):
             self.camera = cv2.VideoCapture("http://localhost:8080/stream?topic=/output/image_raw&type=ros_compressed")
         else:
             self.camera = cv2.VideoCapture(0)
+            # self.camera = cv2.VideoCapture("http://192.168.1.14:8080/stream?topic=/output/image_raw&type=ros_compressed")
+
 
         self.camera.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # set buffer size 
         self.camera.set(cv2.CAP_PROP_FPS, 1)

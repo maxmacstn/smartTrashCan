@@ -23,7 +23,7 @@ def processImage():
         frame = camera.frame
         if time_elapsed > 1./detection_rate and frame is not None:
             prev = time.time()
-            frame = cv2.resize(frame,(299,299))
+            frame = cv2.resize(frame,(300,300))
             # show_frame = frame
             text,show_frame = classifier.predict(frame)
             print(text)
